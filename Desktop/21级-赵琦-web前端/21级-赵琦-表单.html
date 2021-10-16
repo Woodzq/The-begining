@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>21级-赵琦-表单</title>
+   <style>
+      select,input[type=text],[type=password]{
+           width:300px;
+           height:25px;
+       }
+       
+       input[type=submit]{
+           border: solid springgreen;
+           border-radius: 13px;
+           background-color: springgreen;
+           color:whitesmoke;
+           height:35px;
+           width:100px;
+       }
+
+       label{
+           display:inline-block; 
+           text-align: left;
+           width:165px;
+           height:50px;
+           vertical-align: top;
+       }
+   </style>
+  
+</head>
+<body>
+    <form action="" style="width:650px">
+        <label>
+            <a style="color:red">*</a>
+            请输入您的姓名:
+        </label>
+        <input type="text" name="name" required="required"> 
+        <br/>
+        <label>
+            <a style="color:red">*</a>
+            请输入您的密码：
+        </label>
+        <input type="password" name="mima" required="required">
+        <br/>
+        <label>
+            <a style="color:red">*</a>
+            请再次输入密码：
+        </label>
+        <input type="password" name="mima" required="required">
+        <br/>
+        <label>
+            请选择性别：
+        </label>
+        <input type="radio" name="sex">男
+        <input type="radio" name="sex">女
+        <br/>
+        <label>
+            请输入年龄：
+        </label>
+        <input type="text" name="">
+        <br/>
+        <label>
+            请输入生日：
+        </label>
+        <input type="text" name="mima" pattern="/^((19\d{2})|(200[0-8]))+[\-]+[1-12]+[\-]+[1-30]$/">
+        <a style="color:red">格式："yyyy-mm-dd"</a>
+        <br/>
+        <label>
+            请选择你的爱好：
+        </label>
+        <input type="radio" name="hobby">音乐影视
+        <input type="radio" name="hobby">外出旅游
+        <input type="radio" name="hobby">社交活动
+        <br/>
+        <label>
+            <a style="color:red">*</a>
+            请选择所在省市：
+        </label>
+        <select name="province" vaule="请选择省市"  required="required">
+            <option>请选择省市</option>
+            <option> </option>
+        </select>
+        <br/>
+        <label>
+            自我描述：
+        </label>
+        <textarea name="introduction" style="width: 300px;height:90px" placeholder="请填写其他任务...."></textarea>
+        <br/>
+        <br/>
+        <div style="text-align: center">
+        <input type="submit"name="over" value="提交信息" ></div>
+    </form>
+
+</body>
+</html>
